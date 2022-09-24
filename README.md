@@ -1,4 +1,4 @@
-# Algorithm
+# For-coding-practice
  코딩테스트 연습
  
  Jupyter Notebook으로 이론 복습
