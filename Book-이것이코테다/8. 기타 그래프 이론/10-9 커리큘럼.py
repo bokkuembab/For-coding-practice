@@ -40,7 +40,7 @@ def topology_sort():
 
             # 연결된 경로의 합을 더함 (선수 과목 시간 + 현재 강의 시간)
             # 선수 과목을 다 들어야 다음 과목을 들을 수 있으므로 큰 값을 저장함
-            result[lec] = max(result[lec], result[lec] + time[now])
+            result[lec] = max(result[lec], result[now] + time[lec])
             indegree[lec] -= 1      # 진입 차수 1 빼기
             
             # 새로 진입차수가 0이 되는 강의(노드) 큐에 넣기
