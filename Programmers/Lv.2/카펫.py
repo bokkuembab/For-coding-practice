@@ -10,7 +10,8 @@ def solution(brown, yellow):
     # 구하려는 것: [w + 2, h + 2]
     # a + b = w + h + 4 = (brown - 4) / 2 + 4 = p
     # ab = (w + 2) * (h + 2) = wh + 2(w + h) + 4 = yellow + 2 * p + 4 = q
-    # h <= w
+    # x^2 -px + q = 0 의 해를 근의 공식으로 구하면 됨
+    # h <= w 이므로 루트 값을 더해준 것이 w, 빼준 것이 h가 됨
     p = (brown - 4) * 0.5 + 4
     q = yellow + 2 * p - 4
     p *= -1
